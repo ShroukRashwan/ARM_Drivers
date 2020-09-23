@@ -36,6 +36,7 @@ void RCC_voidInitSysClock(void)
 				RCC_CR = 0x00010001; 					/* PLL Enabled */
 			#else
 				#error("You Choose wrong PLL type")
+			#endif
 	#else
 		#error("You Choose wrong Clock type")
 	#endif
